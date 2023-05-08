@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		AD8168F92A0928EA00341BB7 /* GuessTheFlagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8168F82A0928EA00341BB7 /* GuessTheFlagApp.swift */; };
-		AD8168FB2A0928EA00341BB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8168FA2A0928EA00341BB7 /* ContentView.swift */; };
 		AD8168FD2A0928EF00341BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8168FC2A0928EF00341BB7 /* Assets.xcassets */; };
 		AD8169002A0928EF00341BB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8168FF2A0928EF00341BB7 /* Preview Assets.xcassets */; };
+		AD8169072A0929DB00341BB7 /* GuessFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8169062A0929DB00341BB7 /* GuessFlagView.swift */; };
+		AD8169092A092FF000341BB7 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8169082A092FF000341BB7 /* Resources.swift */; };
+		AD81690B2A09311B00341BB7 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81690A2A09311B00341BB7 /* FlagView.swift */; };
+		AD81690D2A09396500341BB7 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81690C2A09396500341BB7 /* Countries.swift */; };
+		AD8169152A0950FF00341BB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8169142A0950FF00341BB7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD8168F52A0928EA00341BB7 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8168F82A0928EA00341BB7 /* GuessTheFlagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagApp.swift; sourceTree = "<group>"; };
-		AD8168FA2A0928EA00341BB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD8168FC2A0928EF00341BB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD8168FF2A0928EF00341BB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD8169062A0929DB00341BB7 /* GuessFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessFlagView.swift; sourceTree = "<group>"; };
+		AD8169082A092FF000341BB7 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		AD81690A2A09311B00341BB7 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
+		AD81690C2A09396500341BB7 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		AD8169132A094F2D00341BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD8169142A0950FF00341BB7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				AD8168F82A0928EA00341BB7 /* GuessTheFlagApp.swift */,
-				AD8168FA2A0928EA00341BB7 /* ContentView.swift */,
-				AD8168FC2A0928EF00341BB7 /* Assets.xcassets */,
+				AD8169102A09484600341BB7 /* Models */,
+				AD8169112A09491C00341BB7 /* Views */,
+				AD8169162A09529800341BB7 /* Resources */,
 				AD8168FE2A0928EF00341BB7 /* Preview Content */,
 			);
 			path = GuessTheFlag;
@@ -65,6 +75,42 @@
 				AD8168FF2A0928EF00341BB7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD8169102A09484600341BB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD81690C2A09396500341BB7 /* Countries.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD8169112A09491C00341BB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD8169122A094C9500341BB7 /* Components */,
+				AD8169062A0929DB00341BB7 /* GuessFlagView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD8169122A094C9500341BB7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AD81690A2A09311B00341BB7 /* FlagView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AD8169162A09529800341BB7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD8169082A092FF000341BB7 /* Resources.swift */,
+				AD8168FC2A0928EF00341BB7 /* Assets.xcassets */,
+				AD8169142A0950FF00341BB7 /* LaunchScreen.storyboard */,
+				AD8169132A094F2D00341BB7 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD8169152A0950FF00341BB7 /* LaunchScreen.storyboard in Resources */,
 				AD8169002A0928EF00341BB7 /* Preview Assets.xcassets in Resources */,
 				AD8168FD2A0928EF00341BB7 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD8168FB2A0928EA00341BB7 /* ContentView.swift in Sources */,
+				AD81690D2A09396500341BB7 /* Countries.swift in Sources */,
+				AD8169092A092FF000341BB7 /* Resources.swift in Sources */,
+				AD8169072A0929DB00341BB7 /* GuessFlagView.swift in Sources */,
+				AD81690B2A09311B00341BB7 /* FlagView.swift in Sources */,
 				AD8168F92A0928EA00341BB7 /* GuessTheFlagApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +320,11 @@
 				DEVELOPMENT_TEAM = D54BGPTYJ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GuessTheFlag/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +351,11 @@
 				DEVELOPMENT_TEAM = D54BGPTYJ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GuessTheFlag/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
